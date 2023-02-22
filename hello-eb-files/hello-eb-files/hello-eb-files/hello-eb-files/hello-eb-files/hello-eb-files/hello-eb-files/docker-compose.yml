@@ -1,7 +1,0 @@
-version: "3"
-services:
-  httpd:
-    image: ghcr.io/alvarodcr/hello-terraform/helloterraformpkg:latest
-    ports:
-      - "80:80"
-
