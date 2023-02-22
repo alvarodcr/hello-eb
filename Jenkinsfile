@@ -10,7 +10,9 @@ pipeline {
         
 	stage('DOCKER --> BUILDING & TAGGING IMAGE') {
             steps{
-		sh "eb deploy"
+		dir ("hello-eb-files"){
+		    sh "eb deploy"
+		}
 		
             }
         }   
