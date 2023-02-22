@@ -10,7 +10,7 @@ pipeline {
         
 	stage('DOCKER --> BUILDING & TAGGING IMAGE') {
             steps{
-		dir ("hello-eb-files"){
+		dir("hello-eb-files"){
 		    withAWS(credentials:AWS_KEY_ROOT) {
 		        sh "eb deploy"
 		
